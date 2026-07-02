@@ -1,0 +1,189 @@
+
+/* ===========================
+   HAPPY BIRTHDAY YUSUF
+   Premium Birthday Website
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#0f172a,#1e3a8a,#6d28d9,#ec4899);
+    background-size:400% 400%;
+    animation:bgMove 15s ease infinite;
+    position:relative;
+}
+
+/* Animated Background */
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Main Container */
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    z-index:5;
+}
+
+/* Glass Card */
+.card{
+    width:420px;
+    max-width:95%;
+    padding:30px;
+    text-align:center;
+    border-radius:30px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.3);
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    color:#fff;
+}
+
+/* Profile Image */
+.profile{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:20px;
+    box-shadow:0 0 25px gold;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        box-shadow:0 0 15px gold;
+    }
+    to{
+        box-shadow:0 0 40px #fff176;
+    }
+}
+
+/* Headings */
+h1{
+    font-size:40px;
+    margin:10px 0;
+    color:#ffe066;
+}
+
+h2{
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+h3{
+    font-size:24px;
+    color:#ffffff;
+}
+
+/* Message */
+.message{
+    margin:20px 0;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* Clock */
+.clock{
+    margin:20px 0;
+}
+
+#time{
+    font-size:30px;
+    color:#00ffd5;
+}
+
+#date{
+    font-size:16px;
+}
+
+/* Cake */
+.cake{
+    font-size:90px;
+    margin:15px 0;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+/* Gift Icons */
+.gifts{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+/* Buttons */
+button{
+    margin:10px;
+    padding:12px 30px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+#celebrate{
+    background:#ff4081;
+    color:#fff;
+}
+
+#musicBtn{
+    background:#00c853;
+    color:#fff;
+}
+
+/* Mobile */
+@media(max-width:600px){
+
+.card{
+    width:95%;
+    padding:20px;
+}
+
+.profile{
+    width:120px;
+    height:120px;
+}
+
+h1{
+    font-size:32px;
+}
+
+.cake{
+    font-size:70px;
+}
+
+}
